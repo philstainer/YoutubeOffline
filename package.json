@@ -1,0 +1,30 @@
+{
+  "name": "youtubedownloader",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-packager": "^9.1.0",
+    "foreman": "^2.0.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.0.17",
+    "styled-components": "2.2.3"
+  },
+  "dependencies": {
+    "youtube-dl": "1.11.1"
+  },
+  "homepage": "./",
+  "main": "./electron-starter.js",
+  "scripts": {
+    "start": "clear&nf start -p 3000",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-start": "node ./electron-wait-react",
+    "react-start": "react-scripts start",
+    "ta": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
+  }
+}
